@@ -11,7 +11,9 @@ import SwiftUI
 struct AisleCodingAssessmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                AuthenticationView().navigationBarHidden(true)
+            }
         }
     }
 }
