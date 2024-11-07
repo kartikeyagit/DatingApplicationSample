@@ -56,6 +56,7 @@ struct HomeView: View {
             
         }
         .accentColor(Color(hex: "8C5CFB"))
+        .preferredColorScheme(.light)
     }
 }
 

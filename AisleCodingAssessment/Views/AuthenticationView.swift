@@ -19,16 +19,19 @@ struct AuthenticationView: View {
                 Text("Get OTP")
                     .padding(.top, 50)
                     .font(.custom("Inter-Medium", size: 15))
+                    .foregroundStyle(.black)
                 
                 Text("Enter Your\nPhone Number")
                     .font(.custom("Inter-ExtraBold", size: 30))
                     .padding(.top, 1.5)
+                    .foregroundStyle(.black)
                 
                 HStack {
                     TextField("+91", text: $viewModel.countryCode)
                         .keyboardType(.phonePad)
                         .frame(width: 60)
                         .padding(.horizontal, 5)
+                        .foregroundStyle(.black)
                         .frame(height: 40)
                         .cornerRadius(8)
                         .multilineTextAlignment(.center)
@@ -41,6 +44,7 @@ struct AuthenticationView: View {
                     TextField("Phone Number", text: $viewModel.phoneNumber)
                         .keyboardType(.phonePad)
                         .padding(.horizontal)
+                        .foregroundStyle(.black)
                         .frame(height: 40)
                         .cornerRadius(8)
                         .font(.custom("Inter-Bold", size: 16))
